@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8667122}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: CorrectAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8667122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +340,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 30947053}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: CorrectAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &30947053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,7 +421,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 438352830}
   - {fileID: 1448544108}
   m_Father: {fileID: 509396500}
   m_RootOrder: 0
@@ -798,7 +821,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 149024543}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &149024543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,7 +1158,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 255676720}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: CorrectAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &255676720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1650,7 +1697,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 353699798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &353699798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1849,17 +1908,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438352829}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 52567917}
+  m_Father: {fileID: 1448544108}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1539}
+  m_AnchoredPosition: {x: 0, y: -1307}
   m_SizeDelta: {x: 800, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &438352831
@@ -1882,17 +1941,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Desarrollado por: \nManuel Barrera\npara UCamp Quiz 1\nEnero - 2023"
+  m_text: "Desarrollado por: \nManuel Barrera\npara UCamp Quiz 1\nFebrero - 2023"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: df4a29e2678cc7d4b91ca2a48429876a, type: 2}
+  m_sharedMaterial: {fileID: -6913834513516931941, guid: df4a29e2678cc7d4b91ca2a48429876a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294910736
+  m_fontColor: {r: 0.06289297, g: 0.13835344, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1909,7 +1968,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.8
+  m_fontSize: 28.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2636,7 +2695,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 549648200}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: CorrectAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &549648200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2758,7 +2829,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 592530674}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &592530674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2880,7 +2963,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 645943506}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &645943506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3516,7 +3611,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 767463394}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: CorrectAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &767463394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4013,7 +4120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 898126097}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &898126097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4405,7 +4524,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1029731503}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1029731503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4662,7 +4793,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1055355875}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1055355875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4762,6 +4905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numQuestions: 6
   count: 0
+  countQuestions: 0
   numRandom: 
   stop: 0
   questions:
@@ -4771,6 +4915,7 @@ MonoBehaviour:
   - {fileID: 1427556671}
   - {fileID: 1953693442}
   - {fileID: 653393129}
+  points: 0
 --- !u!1 &1157799860
 GameObject:
   m_ObjectHideFlags: 0
@@ -4804,7 +4949,7 @@ RectTransform:
   m_Children:
   - {fileID: 1245340730}
   m_Father: {fileID: 1448544108}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5135,7 +5280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1201481094}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1201481094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5504,8 +5661,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Empezar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: df4a29e2678cc7d4b91ca2a48429876a, type: 2}
+  m_sharedMaterial: {fileID: -6913834513516931941, guid: df4a29e2678cc7d4b91ca2a48429876a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5662,7 +5819,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1253903217}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1253903217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6559,7 +6728,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1442215772}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1442215772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6628,9 +6809,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 438352830}
   - {fileID: 1157799861}
   m_Father: {fileID: 52567917}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -6659,8 +6841,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bienvenido a Mind Bold
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c635dd655bf07b64eb19f9e314336501, type: 2}
+  m_sharedMaterial: {fileID: 2739347495337447904, guid: c635dd655bf07b64eb19f9e314336501, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7253,7 +7435,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1633767990}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1633767990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7780,7 +7974,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1752869293}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1752869293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8007,7 +8213,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1777350562}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1777350562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8776,7 +8994,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1955387555}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1955387555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8898,7 +9128,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1956890976}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1956890976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9020,7 +9262,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1968529392}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: CorrectAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1968529392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9279,7 +9533,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2026556113}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2026556113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9401,7 +9667,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2053406632}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2053406632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9523,7 +9801,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2100411368}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106958909}
+        m_TargetAssemblyTypeName: RandomSelect, Assembly-CSharp
+        m_MethodName: IncorrectAnwser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2100411368
 MonoBehaviour:
   m_ObjectHideFlags: 0
