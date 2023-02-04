@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro; 
 
 public class ActiveQuestion : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class ActiveQuestion : MonoBehaviour
 
     public FinalGame fin;
     public LastQuestion lastQ;
+    public TextMeshProUGUI puntaje;
  
     public void ActiveQuestions()
     {        
@@ -42,6 +44,7 @@ public class ActiveQuestion : MonoBehaviour
     public void CorrectAnswer()
     {
         points = points + 100;
+        puntaje.text = points.ToString();
         ActiveQuestions();
         
     }
