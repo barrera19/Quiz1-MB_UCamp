@@ -4,68 +4,34 @@ using UnityEngine;
 
 public class RandomSelect : MonoBehaviour
 {
-    [SerializeField] int numQuestions;
+    public int numQuestions;
+    public List<int> numRandom = new List<int>();
     public int count = 0;
-    public int countQuestions = 0;
-    public List<int> numRandom;
-    public bool stop = false;
-    public GameObject[] questions;
-    public int points = 0;
+    bool stop = false;
+    public GameObject[] question;
 
 
-    void Start()
+    public void inicio()
     {
-         while (!stop)
+        while(!stop)
          {  
-            int temp = Random.Range(0, numQuestions - 1);
+            if(numRandom.Count == numQuestions -1)
+             {
+                break;
+             }
+            else
+            {
+            int temp = Random.Range(0, numQuestions );
 
              if (!numRandom.Contains(temp))
              {
                  numRandom.Add(temp);
                  count++;
-                 print("Count: " + count);    
-                 print("Numero Preguntas: " + numQuestions);
-
-             }  
-                  
-                if (count  == numQuestions -1)
-                {
-                    stop = true;
-                } 
-                        
+             }    
+             
+             }
+             
          }
 
-        ActiveQuestion();
-
         }
-    public void ActiveQuestion()
-    {
-        if(countQuestions != 0)
-        {
-          questions[numRandom[countQuestions]].SetActive(false);
-          countQuestions++;  
-          questions[numRandom[countQuestions]].SetActive(true);
-    
-        }
-        else
-        {
-            questions[numRandom[0]].SetActive(false);
-            questions[numRandom[countQuestions]].SetActive(true);
-            countQuestions++;
-        }
-    
-    }
-
-    public void CorrectAnswer()
-    {
-        points = points + 100;
-        ActiveQuestion();
-
-    }
-
-
-    public void IncorrectAnwser()
-    {
-        ActiveQuestion();
-    }
 }

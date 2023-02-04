@@ -5,14 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameManager[] welcomeInitial;
-    public GameManager[] questionsPanels;
+    public RandomSelect random;
+    public ActiveQuestion active;
+    public FinalGame final;
+    public LastQuestion lastQ;
     
-    void Start()
+
+    public void Start()
     {
-
+        random.inicio();
+        active.ActiveQuestions();
     }
-
      
      
 }
