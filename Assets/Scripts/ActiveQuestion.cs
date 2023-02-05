@@ -16,6 +16,7 @@ public class ActiveQuestion : MonoBehaviour
     public FinalGame fin;
     public LastQuestion lastQ;
     public TextMeshProUGUI puntaje;
+    [SerializeField] int oportunidades = 2; 
     
  
     public void ActiveQuestions()

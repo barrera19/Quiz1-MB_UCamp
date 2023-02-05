@@ -13,6 +13,9 @@ public class RandomSelect : MonoBehaviour
 
     public void inicio()
     {
+
+        numQuestions = question.Length;
+
         while(!stop)
          {  
             if(numRandom.Count == numQuestions -1)
@@ -21,7 +24,7 @@ public class RandomSelect : MonoBehaviour
              }
             else
             {
-            int temp = Random.Range(0, numQuestions );
+            int temp = Random.Range(0, numQuestions);
 
              if (!numRandom.Contains(temp))
              {
