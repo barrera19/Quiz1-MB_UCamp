@@ -11,15 +11,16 @@ public class GameManager : MonoBehaviour
     public LastQuestion lastQ;
     public GameObject pantallaInicial;
     public GameObject panelPreguntas;
-    public GameObject pantallafinal;
+    public GameObject pantallaFinal;
     public Bloqueo bloqueo;
+    public Opportunities opp;
     
 
     public void Start()
     {
         pantallaInicial.SetActive(true);
         panelPreguntas.SetActive(false);
-        pantallafinal.SetActive(false);
+        pantallaFinal.SetActive(false);
         bloqueo.DesBloqueoPantalla();
         random.inicio();
         active.ActiveQuestions();

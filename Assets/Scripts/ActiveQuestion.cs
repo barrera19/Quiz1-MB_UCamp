@@ -8,49 +8,51 @@ using UnityEngine.UI;
 public class ActiveQuestion : MonoBehaviour
 {
 
-  public GameManager gameManager;
+    public GameManager gameManager;
     public int countQuestions = 0;
-    public RandomSelect random;
     public int points = 0;
-
-    public FinalGame fin;
-    public LastQuestion lastQ;
     public TextMeshProUGUI puntaje;
-    [SerializeField] int oportunidades = 2; 
+    public int countOpp = 2;
     
- 
     public void ActiveQuestions()
-    {        
+    {       
 
         if(countQuestions != 0)
         {
-          random.question[random.numRandom[countQuestions]].SetActive(false);
+          gameManager.random.question[gameManager.random.numRandom[countQuestions]].SetActive(false);
           countQuestions++;
-          if(countQuestions == random.question.Length - 1)
+          if(countQuestions == gameManager.random.question.Length - 1)
           {
             print("entre al final");
-            random.question[random.numRandom[countQuestions-1]].SetActive(false);
-            lastQ.LastQ();
+            gameManager.random.question[gameManager.random.numRandom[countQuestions-1]].SetActive(false);
+            gameManager.lastQ.LastQ();
           }
           else
           {
-            random.question[random.numRandom[countQuestions]].SetActive(true);
+            gameManager.random.question[gameManager.random.numRandom[countQuestions]].SetActive(true);
           }
           
         }
         else
         {
-            random.question[random.numRandom[0]].SetActive(false);
+            gameManager.random.question[gameManager.random.numRandom[0]].SetActive(false);
             countQuestions++; 
-            random.question[random.numRandom[countQuestions]].SetActive(true);
+            gameManager.random.question[gameManager.random.numRandom[countQuestions]].SetActive(true);
         }
+        if(countOpp < 0)
+        {
+          countOpp = 2;
+        }
+        puntaje.text = points.ToString();
+        
+        
     }
 
     public void CorrectAnswer(Button button)
     {
         StartCoroutine(AnswerColorCorrect(button));
-        puntaje.text = points.ToString();
         gameManager.bloqueo.BloqueoPantalla();
+        
         
     }
 
@@ -78,6 +80,9 @@ public class ActiveQuestion : MonoBehaviour
         button.image.color = Color.red;
         yield return new WaitForSeconds(0.5f);
         AnswerReset(button);
+        points = points - gameManager.opp.newPoints;
+        countOpp--;
+        gameManager.opp.ActiveQLost();
         ActiveQuestions();
         
     }
