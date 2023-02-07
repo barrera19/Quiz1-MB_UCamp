@@ -12,18 +12,22 @@ public class ActiveQuestion : MonoBehaviour
     public int countQuestions = 0;
     public int points = 0;
     public TextMeshProUGUI puntaje;
-    public int countOpp = 2;
+    public bool opp = true;
     
     public void ActiveQuestions()
     {       
+         opp = true;
+         gameManager.opp.opp1.SetActive(true);
+         gameManager.opp.used1.SetActive(false);
+         gameManager.questionCounter.counterQuestion();
 
         if(countQuestions != 0)
         {
-          gameManager.random.question[gameManager.random.numRandom[countQuestions]].SetActive(false);
-          countQuestions++;
-          if(countQuestions == gameManager.random.question.Length - 1)
+          gameManager.random.question[gameManager.random.numRandom[countQuestions-1]].SetActive(false);
+          
+          if(countQuestions == gameManager.random.question.Length-1)
           {
-            print("entre al final");
+            print("entre al final: Lenght: " + gameManager.random.question.Length);
             gameManager.random.question[gameManager.random.numRandom[countQuestions-1]].SetActive(false);
             gameManager.lastQ.LastQ();
           }
@@ -31,18 +35,12 @@ public class ActiveQuestion : MonoBehaviour
           {
             gameManager.random.question[gameManager.random.numRandom[countQuestions]].SetActive(true);
           }
-          
         }
         else
         {
-            gameManager.random.question[gameManager.random.numRandom[0]].SetActive(false);
-            countQuestions++; 
-            gameManager.random.question[gameManager.random.numRandom[countQuestions]].SetActive(true);
+          gameManager.random.question[gameManager.random.numRandom[0]].SetActive(true);
         }
-        if(countOpp < 0)
-        {
-          countOpp = 2;
-        }
+        
         puntaje.text = points.ToString();
         
         
@@ -52,8 +50,7 @@ public class ActiveQuestion : MonoBehaviour
     {
         StartCoroutine(AnswerColorCorrect(button));
         gameManager.bloqueo.BloqueoPantalla();
-        
-        
+
     }
 
     public void IncorrectAnwser(Button button)
@@ -62,16 +59,29 @@ public class ActiveQuestion : MonoBehaviour
         StartCoroutine(AnswerColorIncorrect(button));
         button.image.color = Color.red;
         gameManager.bloqueo.BloqueoPantalla();
+        points = points - gameManager.opp.newPoints;
+        opp = false;
         
     }
 
    public IEnumerator AnswerColorCorrect(Button button)
     {
-        points = points + 100;
         button.image.color = Color.green;
         yield return new WaitForSeconds(1);
         AnswerReset(button);
+        if(opp)
+        {
+        points = points + 100;
+        countQuestions++;
         ActiveQuestions();
+        }
+        else
+        {
+          points = points + gameManager.opp.newPoints;
+          countQuestions++;
+          ActiveQuestions();
+        }
+        
         
     }
 
@@ -80,10 +90,24 @@ public class ActiveQuestion : MonoBehaviour
         button.image.color = Color.red;
         yield return new WaitForSeconds(0.5f);
         AnswerReset(button);
-        points = points - gameManager.opp.newPoints;
-        countOpp--;
-        gameManager.opp.ActiveQLost();
-        ActiveQuestions();
+        puntaje.text = points.ToString();
+        if(gameManager.opp.lastChance)
+        { 
+          if(countQuestions == 0)
+          {
+          gameManager.opp.ActiveQLost();
+          }
+          else{
+            gameManager.opp.ActiveQLost();
+          }
+        }
+        else
+        {
+              gameManager.random.question[gameManager.random.numRandom[countQuestions]].SetActive(false);
+              gameManager.opp.lastChance = true;
+              countQuestions++;
+              ActiveQuestions();
+        }
         
     }
 
@@ -93,8 +117,6 @@ public class ActiveQuestion : MonoBehaviour
         button.image.color = colorReset;
         gameManager.bloqueo.DesBloqueoPantalla();
         new WaitForSeconds(1);
-
-
      }
 
 }

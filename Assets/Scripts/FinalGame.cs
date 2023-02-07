@@ -17,6 +17,7 @@ public class FinalGame : MonoBehaviour
 
     public void restart()
     {
+        cleanQuestions();
         gameManager.active.countQuestions = 0;
         gameManager.active.points = 0;
         gameManager.random.count = 0;
@@ -26,6 +27,14 @@ public class FinalGame : MonoBehaviour
         gameManager.pantallaFinal.SetActive(false);
         gameManager.pantallaInicial.SetActive(true);
         
-        
     }
+
+    public void cleanQuestions()
+    {
+        for(int i = 0; i < gameManager.random.numQuestions; i++)
+        {
+            gameManager.random.question[i].SetActive(false);
+        }
+    }
+
 }

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject pantallaFinal;
     public Bloqueo bloqueo;
     public Opportunities opp;
+    public QuestionCounter questionCounter;
     
 
     public void Start()
@@ -24,8 +25,11 @@ public class GameManager : MonoBehaviour
         bloqueo.DesBloqueoPantalla();
         random.inicio();
         active.ActiveQuestions();
-    
     }
-     
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
      
 }
