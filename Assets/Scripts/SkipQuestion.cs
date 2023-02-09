@@ -9,6 +9,7 @@ public class SkipQuestion : MonoBehaviour
 
     public void omitirPregunta()
     {
+        gameManager.active.countQuestions++;
         gameManager.active.ActiveQuestions();
     } 
 }

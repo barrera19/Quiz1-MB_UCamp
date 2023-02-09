@@ -9,7 +9,11 @@ public class FinishGame : MonoBehaviour
 
     public void endGame()
     {
-        gameManager.random.question[gameManager.random.numRandom[gameManager.active.countQuestions]].SetActive(false);
+        if(gameManager.active.countQuestions == 0) 
+        {
+        gameManager.active.countQuestions++;
+        }
+        gameManager.random.question[gameManager.random.numRandom[gameManager.active.countQuestions-1]].SetActive(false);
         gameManager.final.FinalScreen();
     }
 }
