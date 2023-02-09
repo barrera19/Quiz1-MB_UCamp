@@ -78,6 +78,7 @@ public class ActiveQuestion : MonoBehaviour
         else
         {
           points = points + gameManager.opp.newPoints;
+          gameManager.opp.lastChance = true;
           countQuestions++;
           ActiveQuestions();
         }
