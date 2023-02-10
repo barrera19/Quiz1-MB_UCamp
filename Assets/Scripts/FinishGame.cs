@@ -15,5 +15,6 @@ public class FinishGame : MonoBehaviour
         }
         gameManager.random.question[gameManager.random.numRandom[gameManager.active.countQuestions-1]].SetActive(false);
         gameManager.final.FinalScreen();
+        
     }
 }
