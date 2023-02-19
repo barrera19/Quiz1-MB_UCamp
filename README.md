@@ -8,6 +8,6 @@ Nombre: Boldness -¿Te Atreves?
  
 +  Inspirado en preguntas de Cultura General.
 +  Retos Adicionales alcanzados:
-         - Fácil (2.5/3).
+         - Fácil (3/3).
          - Intermedio (1/3).
          - Difícil (0/3).
